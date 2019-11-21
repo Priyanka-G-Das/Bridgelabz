@@ -10,6 +10,6 @@ const read = require('readline-sync')
 const n = read.question("enter the size");
 const a = new Array(n);
 for (let i = 1; i < n; i++) {
-    a[i] = read.question("enter the element to the array");
+a[i] = read.question("enter the element to the array");
 }
 take.InsertionSort(n,a);
