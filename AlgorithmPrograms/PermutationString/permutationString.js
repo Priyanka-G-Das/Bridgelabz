@@ -12,9 +12,9 @@
     const word = read.question("enter one string");
     const result = take.getAllPermutations(word);
     Console.log(result);
-}
+   }
   catch (error) {
     console.log(error);
-}
+   }
 
 

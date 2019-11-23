@@ -9,7 +9,7 @@ const take = require("..")
 const read = require('readline-sync')
 try{
 const length = read.question("Enter total number of strings");
-unsortedArray = new Array(length);
+unsortedArray = new Array(length);//declar a array
 for(let i = 0; i<length; i++)//taking the element from the array
 {
 unsortedArray[i] = readline.question("Enter the array" + i + "value :");

@@ -15,7 +15,7 @@ try {
         a[i] = read.question("enter the element to the array");
     }
     take.InsertionSort(n, a);
-}
-catch (error) {
+   }
+  catch (error) {
     Console.log(error);
-}
+  }
