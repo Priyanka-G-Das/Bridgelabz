@@ -1,5 +1,5 @@
 /*******************************************************************
-   purpose : Extend the above program to find the prime numbers that are Anagram and Palindrome 
+*  purpose : Extend the above program to find the prime numbers that are Anagram and Palindrome 
 *  File    : mergeSort.js
 *  Auther  : priyankadas
 *  since   : 21/112019
@@ -22,6 +22,6 @@
     console.log("AnagramPrimeArray");
     }
 
-  catch (error) {
+    catch (error) {
     console.log(error);
-  }
+    }

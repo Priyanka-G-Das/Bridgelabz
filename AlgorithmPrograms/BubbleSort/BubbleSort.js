@@ -1,6 +1,6 @@
 /***************************************************************************
 *purpose    :Reads in integers prints them in sorted order using Bubble Sort
-* Auther   : priyankadas
+*Auther   : priyankadas
 *File      : Array2D.js
 *since     : 16/11/2019
  **************************************************************************/
