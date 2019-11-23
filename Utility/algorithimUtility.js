@@ -12,10 +12,10 @@ exports.isAnagram = (firstLetter, secondLetter) => {
         /* compare both array after joining of each latter of array
         *compare function wil return 0 if both string are equal*/
         if (firstLetterArray.sort().join(' ').compare(secondLetterArray.sort().join(' ')) == 0) {
-            return true;
-        }
+            console.log("Anagram");
+        } 
         else {
-            return false;
+            console.log("not Anagram");
         }
 
     }
@@ -44,7 +44,7 @@ exports.generatePrimeNumbers = (initial, limits) => {
         }
         // if true then number is prime
         if (flag == true) {
-            PrimeNumberspush(i);
+            PrimeNumbers.push(i);
 
         }
     }
