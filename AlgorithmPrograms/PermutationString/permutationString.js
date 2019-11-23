@@ -6,8 +6,8 @@
  * ****************************************************************/
 // string permutation of a string
    const read = require("readline-sync");
-   try {
     const take = require('../../Utility/algorithimUtility');
+    try{
     //take one input of string
     const word = read.question("enter one string");
     const result = take.getAllPermutations(word);

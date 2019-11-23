@@ -7,17 +7,22 @@
 *********************************************************************************************************/
 const take = require('./BinarySearchBL')
 const read = require('readline-sync')
-const n = read.question("enter the array size");
-const array = new Array(n);
-for (let i = 0; i < n; i++)//taking element from array
-{
-    array[i] = read.question("enter the element to arry");
+try {
+    const n = read.question("enter the array size");
+    const array = new Array(n);// declaring array
+    for (let i = 0; i < n; i++) //taking element from array
+    {
+        array[i] = read.question("enter the element to arry");
+    }
+    const value = read.question("enter the element to search");
+    const result = take.binarySearch(array, value);
+    if (result == -1) {
+        console.log('not found');
+    }
+    else {
+        console.log("found");
+    }
 }
-const value = read.question("enter the element to search");
-const result = take.binarySearch(array, value);
-if (result == 1) {
-    console.log('not found');
-}
-else {
-    console.log("found");
+catch (error) {
+    console.log(error);
 }

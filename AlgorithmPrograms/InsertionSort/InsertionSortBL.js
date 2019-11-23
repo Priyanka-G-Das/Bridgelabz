@@ -1,5 +1,6 @@
 const read = require('readline-sync');
 exports.InsertionSort = (n, a) => {
+    
     var temp;
     for (let i = 1; i < n; i++) {
         temp = a[i];
@@ -14,6 +15,5 @@ exports.InsertionSort = (n, a) => {
     for (let i = 0; i < n; i++) {
         console.log(a[i]);
     }
-
-
 }
+

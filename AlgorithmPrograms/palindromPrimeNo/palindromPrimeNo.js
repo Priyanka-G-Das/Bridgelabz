@@ -5,8 +5,11 @@
 *  since   : 21/112019
  ****************************************************************/
 
-try {
+
     var take = require('../../Utility/algorithimUtility')
+    var read = require('readline-sync')
+    try{
+        
     var primeArray = new Array();
     var PalindromeArray = new Array();
     var AnagramPrimrArray = [];
@@ -17,7 +20,8 @@ try {
     console.log("palindromArray");
     console.log("Anagram prime number are");
     console.log("AnagramPrimeArray");
-}
+    }
+
 catch (error) {
     console.log(error);
 }

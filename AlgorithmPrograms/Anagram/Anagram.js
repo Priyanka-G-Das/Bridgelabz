@@ -11,15 +11,11 @@ const take = require('../../Utility/algorithimUtility');
 try {
     const firstLetter = read.question("enter first letter");
     const secondLetter = read.question("enter second value");
-    const result = take.isAnagram(firstLetter, secondLetter);
-    if (result) {
-        console.log("its a angram");
+    take.isAnagram(firstLetter, secondLetter);
+    
+    }
+    
 
-    }
-    else {
-        console.log(" letters are not in anagram");
-    }
-}
 catch (error) {
     console.log(error);
 }

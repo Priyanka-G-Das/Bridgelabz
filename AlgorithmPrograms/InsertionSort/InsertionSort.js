@@ -7,9 +7,15 @@
 **********************************************************************************/
 const take = require('./InsertionSortBL')
 const read = require('readline-sync')
-const n = read.question("enter the size");
-const a = new Array(n);
-for (let i = 1; i < n; i++) {
-a[i] = read.question("enter the element to the array");
+try {
+    const n = read.question("enter the size");
+    const a = new Array(n);//declaring a array
+    for (let i = 1; i < n; i++) //taking the element from the array
+    {
+        a[i] = read.question("enter the element to the array");
+    }
+    take.InsertionSort(n, a);
 }
-take.InsertionSort(n,a);
+catch (error) {
+    Console.log(error);
+}
