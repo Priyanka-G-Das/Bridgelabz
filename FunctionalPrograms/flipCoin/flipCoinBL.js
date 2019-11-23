@@ -1,5 +1,5 @@
 exports.FlipCoinPersantage = (n) => {
-    const count = 0, head = 0, tail = 0;
+    var count = 0, head = 0, tail = 0;
     if (n > 0) {
         while (count < n) {
             if (Math.random() < 0.5) {
