@@ -3,7 +3,7 @@
  * the performance of operations. Ensure parentheses must appear in a balanced fashion.
 
 *  Auther   : priyankadas
-*  File     : Array2D.js
+*  File     : BalancedParanthesis.js
 *  since    : 25/11/2019
  */
 const BalPar = require('./balancedParenthesisBL')
