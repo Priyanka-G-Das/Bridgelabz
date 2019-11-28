@@ -6,7 +6,7 @@
 *  since    : 16/11/2019
  ********************************************************************************************/
 const anagramPrimeStack = require('../PrimeAnaStack/PrimeAnaStackBL');
-const primeAna = require("readline-sync");
+const primeAna= require("readline-sync");
 function printAnagramPrime() {
     try {
         const stackLink = new anagramPrimeStack.StackedLink;

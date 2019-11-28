@@ -4,7 +4,8 @@
 *  File     : StringPalindrom.js
 *  since    : 25/11/2019
  ***********************************************************************************************/
-const take=require('../stringPalindrom/stringPalindromBL')
-const readline=require('readline-sync')
-const str=readline.question("enter the string");
-take.StringPalindrom(str);
+var read = require("readline-sync")
+var take = require('../stringPalindrom/stringPalindromBL')
+var word = read.question("Enter a word to check palindrome");
+if (word == "") throw "please enter a word"
+take.checkPalindrome(word);

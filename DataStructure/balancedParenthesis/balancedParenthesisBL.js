@@ -1,7 +1,7 @@
 BalParentheses = (exp) => {
     const Stk = require('../balancedParenthesis/balancedParenthesis1BL');
     arr = exp.toString().split('');
-    let Stack1 = new Stk.Stack;
+    let Stack1 = new Stack();
     arr.forEach(element => {
         if (element == '(' || element == '[' || element == '{') {
             Stack1.push(element);

@@ -54,7 +54,7 @@ class linkedList {
         /**
          * to store current node 
          **/
-        const  current;
+        let current;
         /**
          * if list is empty add an searchWord and make it head. 
          **/
