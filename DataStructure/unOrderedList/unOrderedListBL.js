@@ -3,7 +3,7 @@ module.exports = {
         /*
         * create a new object of Linkedlist class
         */
-        const list = new linkedList;
+        let list = new linkedList;
         /*
         *add all the array element to the linked list
         */
@@ -50,7 +50,7 @@ class linkedList {
         /**
          * creating a new node
          */
-        const node = new Node(searchWord);
+        let node = new Node(searchWord);
         /**
          * to store current node 
          **/
@@ -75,10 +75,10 @@ class linkedList {
     * remove the string or searchWord,if it already exists
     */
     remove(searchWord) {
-    const  current = this.head;
-        const  previous = null;
+    let  current = this.head;
+        let  previous = null;
         while (current != null) {
-            if (current.searchWord === searchWord) {
+            if (current.searchWord == searchWord) {
                 if (previous == null) {         //if first element is the searchword
                     this.head = current.next;   // the saerchword will be removed and head will be the next element
                 }
@@ -101,10 +101,10 @@ class linkedList {
     * checks the search word already present or not
     */
     search(searchWord) {
-        const count = 0;
-        const  current = this.head;
+        let count = 0;
+        let   current = this.head;
         while (current != null) {
-            if (current.searchWord === searchWord) {
+            if (current.searchWord == searchWord) {
                 return count; //if item found it will return 1
             }
             count++;
@@ -117,8 +117,8 @@ class linkedList {
         /**
          * print the given list after performing changes.
          */
-        const  current = this.head;
-        const string = "";
+        let  current = this.head;
+        let string = "";
         while (current) {
             string += current.searchWord + " ";
             current = current.next;
@@ -129,7 +129,7 @@ class linkedList {
 }
 
 function writeToFile(fileName, data) {
-    const fs = require('fs');
+    let fs = require('fs');
     /*
     * it is used to access the file  system module
     *fs.writefile() write the data in specified file if does not found it will create the file

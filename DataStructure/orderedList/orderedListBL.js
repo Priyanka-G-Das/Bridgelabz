@@ -3,15 +3,15 @@ module.exports = {
         /*
         *
         */
-        const fileDataArray = fileData.toString().split(' ');
-        const  numbersArray = new Array();
+        let fileDataArray = fileData.toString().split(' ');
+        let  numbersArray = new Array();
         for (let i = 0; i < fileDataArray.length; i++) {
             numbersArray.push(fileDataArray[i]);
         }
         /*
         * create a new object of Linkedlist class
         */
-        const list = new linkedList;
+        let list = new linkedList;
         /*
         Before inserting linked list sort the array 
         */
@@ -40,7 +40,7 @@ module.exports = {
         /**
         * write operation to save updated list into the file.
         */
-        const dataWrite = list.show();
+        let dataWrite = list.show();
         writeToFile("./NumberList.txt", dataWrite);
     }
 }
@@ -59,7 +59,7 @@ class linkedList {
         /**
          * creating a new node
          */
-        const node = new Node(searchNumber);
+        let node = new Node(searchNumber);
 
         /**
          * if list is empty add an searchNumber and make it head. 
@@ -71,8 +71,8 @@ class linkedList {
             /**
            * to store current node 
            **/
-            const  current = this.head;
-            var previous, count = 0;
+            let  current = this.head;
+            let previous, count = 0;
             /*
             *while loop iterate till last node if search number greater than all
              */
@@ -100,8 +100,8 @@ class linkedList {
     * remove the string or searchNumber,if it already exists
     */
     remove(searchNumber) {
-        const current = this.head;
-        const  previous = null;
+        let current = this.head;
+        let  previous = null;
         while (current != null) {
             if (current.data == searchNumber) {
                 if (previous == null) {         //if first element is the searchNumber
@@ -126,8 +126,8 @@ class linkedList {
         /**
          * print the given list after performing changes.
          */
-        const  current = this.head;
-        const  string = "";
+        let  current = this.head;
+        let  string = "";
         while (current) {
             string += current.data + " ";
             current = current.next;
@@ -136,8 +136,8 @@ class linkedList {
         return string;
     }
     search(searchNumber) {
-        const count = 0;
-        const  current = this.head;
+        let count = 0;
+        let  current = this.head;
         while (current != null) {
             if (current.data == searchNumber) {
                 return count; //if item found it will return 1
@@ -150,7 +150,7 @@ class linkedList {
 
 }
 function writeToFile(fileName, data) {
-    const fs = require('fs');
+    let fs = require('fs');
     /*
     * it is used to access the file  system module
     *fs.writefile() write the data in specified file if does not found it will create the file
