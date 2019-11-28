@@ -3,7 +3,7 @@
 *  Auther   : priyankadas
 *  File     : powerOf2
 *  since    : 16/11/2019
- *****************************************************************************/
+ *************************************************************************/
 const pow1=require('../functional/power2/power2BL')
 // var assert=require('assert');
 
