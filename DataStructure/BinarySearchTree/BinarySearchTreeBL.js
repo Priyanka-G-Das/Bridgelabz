@@ -84,7 +84,7 @@ class BinarySearchTree {
             // Deleting node with two children
             // minumum node of the rigt subtree
             // is stored in aux
-            var aux = this.findMinNode(node.right);
+            let aux = this.findMinNode(node.right);
             node.data = aux.data;
             node.right = this.removeNode(node.right, aux.data);
             return node;
