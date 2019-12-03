@@ -12,10 +12,10 @@ exports.isAnagram = (firstLetter, secondLetter) => {
         /* compare both array after joining of each latter of array
         *compare function wil return 0 if both string are equal*/
         if (firstLetterArray.sort().join(' ').compare(secondLetterArray.sort().join(' ')) == 0) {
-            console.log("Anagram");
-        } 
+            return true;
+        }
         else {
-            console.log("not Anagram");
+            return false;
         }
 
     }
@@ -44,7 +44,7 @@ exports.generatePrimeNumbers = (initial, limits) => {
         }
         // if true then number is prime
         if (flag == true) {
-            PrimeNumbers.push(i);
+            PrimeNumberspush(i);
 
         }
     }
@@ -55,6 +55,7 @@ exports.generatePrimeNumbers = (initial, limits) => {
 
 /**************************************************************************************************
  * *************************************Permutation of a String*************************************/
+//Recursive function to genetare all permutation  of a string
 exports.getAllPermutation = (string) => {
     const results = [];
     if (string.length == 1) {
@@ -76,7 +77,7 @@ exports.getAllPermutation = (string) => {
         //console3.log('result for'+result)
     }
 
-    returnresults;
+    return results;
 }
 
 

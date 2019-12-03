@@ -5,7 +5,7 @@
 *  File     : Array2D.js
 *  since    : 16/11/2019
 ***************************************************************************************/
-const take = require("./array2dBL");
+const take = require('../array2d/array2dBL');
 const read = require('readline-sync');
 const row = read.question("enter the row");
 const col = read.question("enter the column");
