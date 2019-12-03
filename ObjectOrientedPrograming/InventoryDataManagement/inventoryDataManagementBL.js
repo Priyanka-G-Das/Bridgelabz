@@ -3,7 +3,7 @@
 *           Pulses and Wheats with properties name, weight, price per kg.
 *           Calculate the value for every Inventory.
 * File    : inventoryDataManagement.js
-* Author  : Riyazuddin K
+* Author  : Priyankadas
 * Date    : 12-11-2019
 ***********************************************************************************************/
 let  = require('prompt-sync');//node-module prompt-sync
