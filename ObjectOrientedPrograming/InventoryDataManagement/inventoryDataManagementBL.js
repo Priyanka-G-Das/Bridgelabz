@@ -6,11 +6,11 @@
 * Author  : Priyankadas
 * Date    : 12-11-2019
 ***********************************************************************************************/
-let  = require('prompt-sync');//node-module prompt-sync
+//let   = require('prompt-sync');//node-module prompt-sync
 let util = require('./grocery')
 let fs = require('fs');
 try {
-    let data = fs.readFileSync('../'); //read file from json
+    let data = fs.readFileSync('/home/user/Bridgelabz/ObjectOrientedPrograming/InventoryDataManagement/inventoryDataManagement.json'); //read file from json
     /*
     * function JSON.parse() is used to convert the string into a JavaScript Objects
     */
@@ -27,7 +27,7 @@ try {
         let total = rice.total();
         console.log("Total price of rice : " + total + "Rs");
     }
-    var wheatLength = jsonInventory.Wheats.length;
+    let wheatLength = jsonInventory.Wheats.length;
     console.log("*****Wheat Items******");
     for (let i = 0; i < wheatLength; i++) {
         let name = jsonInventory.Wheats[i].name;
@@ -38,15 +38,15 @@ try {
         let total = wheat.total();
         console.log("Total value of wheats : " + total + "Rs");
     }
-    let pulseLength = jsonInventory.Pulses.length;
+    let pulsesLength = jsonInventory.Pulses.length;
     console.log("*****Pulses Items******");
-    for (let i = 0; i < pulseLength; i++) {
+    for (let i = 0; i < pulsesLength; i++) {
         let name = jsonInventory.Pulses[i].name;
         let weight = jsonInventory.Pulses[i].weight;
         let price = jsonInventory.Pulses[i].price;
         console.log("Name : " + name + "\nTotal Weight: " + weight + "\nPrice /Kg : " + price)
-        let pulse = new util.Pulse(name, weight, price);
-        let total = pulse.total();
+        let pulses = new util.Pulses(name, weight, price);
+        let total = pulses.total();
         console.log("Total value of pulses : " + total + "Rs");
     }
 }
