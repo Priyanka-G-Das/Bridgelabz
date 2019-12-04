@@ -1,7 +1,7 @@
 /********************************************************************************
  * purpose :Demonstrate mediator pattern.
- *           (Mediator pattern focuses on provide a mediator between objects for communication and 
- *              help in implementing loose-coupling between objects. )
+ *          (Mediator pattern focuses on provide a mediator between objects for communication and 
+ *          help in implementing loose-coupling between objects. )
  * file    :mediatorPattern.js
  * author  :Priyankadas
  * date    :19-11-2019
@@ -39,7 +39,7 @@ class User {
 let user1 = new User();
 let user2 = new User();
 
-user1.setName("Riyaz");
-user2.setName("Girish");
-user1.sendMessage("Hi Girish");
-user2.sendMessage("Hi Riyaz");
+user1.setName("Priyanka");
+user2.setName("Soumya");
+user1.sendMessage("Hi Soumya");
+user2.sendMessage("Hi Priyanka");

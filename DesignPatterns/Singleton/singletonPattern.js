@@ -5,12 +5,12 @@ purpose :Demonstrate singleton pattern.
 * date    :2-12-2019
 ********************************************************************************************/
 /**
-* @purpose :To create one instance and return it.
+* purpose :To create one instance and return it.
 */
-var singleton = (function () {
-   var instance;
+let singleton = (function () {
+   let instance;
    function createInstance() {
-       var object = new Object("I am the instance");
+       let object = new Object("I am the instance");
        return object;
    }
    return {
@@ -23,8 +23,8 @@ var singleton = (function () {
    };
 })();
 function run() {
-   var instance1 = singleton.getInstance();
-   var instance2 = singleton.getInstance();
+   let instance1 = singleton.getInstance();
+   let instance2 = singleton.getInstance();
    
    if (instance1 === instance2) {
        console.log("I am singleton Pattern");
