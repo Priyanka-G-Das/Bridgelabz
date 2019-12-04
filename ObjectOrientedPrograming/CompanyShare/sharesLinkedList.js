@@ -57,6 +57,7 @@ module.exports = class LinkedList {
     }
     /**
      * @purpose :To delete particular data from linkedlist.
+     * @param {*} name 
      */
     delete(name) {
         try {
