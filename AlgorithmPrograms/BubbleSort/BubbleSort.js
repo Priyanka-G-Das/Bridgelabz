@@ -1,7 +1,7 @@
 /***************************************************************************
 *purpose    :Reads in integers prints them in sorted order using Bubble Sort
 *Auther     : priyankadas
-*File       : Array2D.js
+*File       : BubbleSort.js
 *since      : 16/11/2019
  **************************************************************************/
 const take = require("./BubbleSortBL")
