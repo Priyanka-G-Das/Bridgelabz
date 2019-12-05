@@ -4,7 +4,7 @@
  * author  :Priyankadas
  * date    :2-12-2019
  *****************************************************************************************/
-function student(name,age,add){
+function student(name,age){
     this.name=name;
     this.age=age;
     this.say=()=>{

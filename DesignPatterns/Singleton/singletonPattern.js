@@ -7,7 +7,7 @@ purpose :Demonstrate singleton pattern.
 /**
 * purpose :To create one instance and return it.
 */
-let singleton = (function () {
+let singleton = (function() {
    let instance;
    function createInstance() {
        let object = new Object("I am the instance");
