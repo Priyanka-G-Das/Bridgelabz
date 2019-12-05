@@ -3,8 +3,7 @@
 * @Purpose : to study the functionals working.
 * @description :Number of Binary search tree
 * @overview : Binary search tree
-* @author : Priyankadas
-* @version : 1.0
+* @author   : Priyankadas
 * @since    :29/11/2019
 ***************************************************************************/
 let binary = require('../BinarySearchTree/BinarySearchTreeBL')
