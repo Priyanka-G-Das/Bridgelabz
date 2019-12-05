@@ -4,6 +4,11 @@
             "name": "WhiteRice",
             "weight": 20,
             "price": 50
+        },
+        {
+            "name": "ziraRice",
+            "weight": 20,
+            "price": 50
         }
     ],
     "Pulses": [
@@ -11,9 +16,19 @@
             "name": "KidneyBeans",
             "weight": 15,
             "price": 45
+        },
+        {
+            "name": "KidneyBeans",
+            "weight": 15,
+            "price": 45
         }
     ],
     "Wheats": [
+        {
+            "name": "Ashirvad",
+            "weight": 22,
+            "price": 44
+        },
         {
             "name": "Ashirvad",
             "weight": 22,

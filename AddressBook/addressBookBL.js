@@ -1,7 +1,7 @@
 const input = require("readline-sync")
 const fs = require("fs")
 //main function that takes in the file as input and calls different functions based upon the user input
-addressOperations = (jsonFile) => {
+exports.addressOperations = (jsonFile) => {
     let N = input.questionInt("press \n '1' to edit book \n '2' to add new book \n '3' to delete book \n '4' to search by name\n'5' to print all books \n :")
     switch (N) {
         case 1:
@@ -79,4 +79,3 @@ printFile = (jsonFile) => {
         console.log(book);
     })
 };
-module.exports={addressOperations}

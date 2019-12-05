@@ -6,7 +6,7 @@
 * Author  : Priyankadas
 * Date    : 12-11-2019
 ***********************************************************************************************/
-//let   = require('prompt-sync');//node-module prompt-sync
+let prompt  = require('prompt-sync');//node-module prompt-sync
 let util = require('./grocery')
 let fs = require('fs');
 try {
