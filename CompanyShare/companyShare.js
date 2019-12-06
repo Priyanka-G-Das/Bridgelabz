@@ -1,6 +1,6 @@
-/******************************************* *********************************************
+/******************************************* *******************************************************
 * Purpose : Maintain the List of CompanyShares in a Linked List.
-*            So new CompanyShares can be added or removed easily.
+*           So new CompanyShares can be added or removed easily.
 * File    :companySharesManage.js
 * Author  :priyankadas
 * Date    :1-12-2019
@@ -10,7 +10,7 @@ let fs = require('fs');
 /** 
 *@purpose : import the business logic linked list
 */
-let linkedList = require('../CompanyShare/sharesLinkedList');
+let linkedList = require('./sharesLinkedList');
 /** 
 *@purpose : To conversation with the user via a console
 */
