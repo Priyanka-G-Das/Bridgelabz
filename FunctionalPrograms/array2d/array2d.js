@@ -5,8 +5,8 @@
 *  File     : Array2D.js
 *  since    : 16/11/2019
 ***********************************************************************************/
-const take = require('../array2d/array2dBL');
-const read = require('readline-sync');
-const row = read.question("enter the row");
-const col = read.question("enter the column");
+let take = require('../array2d/array2dBL');
+let read = require('readline-sync');
+let row = read.question("enter the row");
+let col = read.question("enter the column");
 take.array2d(row, col);

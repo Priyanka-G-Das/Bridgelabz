@@ -4,7 +4,7 @@
 *  since    : 16/11/2019
 ********************************************************************/
 // Function to generate harmonic number.    
-const input = require('./harmonicBL');
-const read = require('readline-sync');
-const n = read.question("enter the element");
+let input = require('./harmonicBL');
+let read = require('readline-sync');
+let n = read.question("enter the element");
 input.harmonicNum(n);

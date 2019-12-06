@@ -8,9 +8,9 @@
 * since    : 16/11/2019
 *******************************************************************************************/
 
-const take = require('./GamblerBL')
-const read = require('readline-sync')
-const stake = read.question("enter the stake");
-const goals = read.question("enter goals");
-const trials = read.question("enter the trials");
+let take = require('./GamblerBL')
+let read = require('readline-sync')
+let stake = read.question("enter the stake");
+let goals = read.question("enter goals");
+let trials = read.question("enter the trials");
 take.Gambler(stake, goals, trials);

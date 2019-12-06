@@ -4,7 +4,7 @@
  *  Author  : Priyankadas
  * since    : 16/11/2019
 **********************************************************************/    
-const take = require('./PrimeFactorBL')
-const read = require('readline-sync')
-const n = read.question("enter the element");
+let take = require('./PrimeFactorBL')
+let read = require('readline-sync')
+let n = read.question("enter the element");
 take.PrimeFactors(n);

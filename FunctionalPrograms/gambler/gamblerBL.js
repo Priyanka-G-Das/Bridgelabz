@@ -1,7 +1,7 @@
 exports.Gambler = (stake, goal, trials) => {
-    const win = 0;
-    const loss = 0;
-    const total = 0;
+    let win = 0;
+    let loss = 0;
+    let total = 0;
     for (let i = 0; i <= trials; i++) {
         if (Math.random() > 0.5) {
             win++;
@@ -20,8 +20,8 @@ exports.Gambler = (stake, goal, trials) => {
             }
         }
     }
-    const w_per = (win / total) * 100;
-    const l_per = (loss / total) * 100;
+    let w_per = (win / total) * 100;
+    let l_per = (loss / total) * 100;
     console.log(win);
     console.log(loss);
 

@@ -4,7 +4,7 @@
  *  File    : StringReplace.js
  *   since    : 16/11/2019
  *********************************************************************************/
-const take = require('./stringReplaceBL')
-const read = require('readline-sync')
-const name = read.question("enter your name");
+let take = require('./stringReplaceBL')
+let read = require('readline-sync')
+let name = read.question("enter your name");
 take.StringReplace(name);

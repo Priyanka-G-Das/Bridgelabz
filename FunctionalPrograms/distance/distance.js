@@ -6,8 +6,8 @@
 * File     : Distance.js
 * since    : 16/11/2019
 ****************************************************************************************/
-const input = require('./distanceBL');
-const read = require('readline-sync');
-const n = read.question("enter the element");
-const p = read.question("enter the num");
+let input = require('./distanceBL');
+let read = require('readline-sync');
+let n = read.question("enter the element");
+let p = read.question("enter the num");
 input.distance(n, p);
