@@ -5,16 +5,16 @@
  * since    : 18/11/2019
  * ********************************************************************************************************/
 // string permutation of a string
-   const read = require("readline-sync");
-    const take = require('../../Utility/algorithimUtility');
-    try{
-    //take one input of string
-    const word = read.question("enter one string");
-    const result = take.getAllPermutations(word);
-    Console.log(result);
-   }
-  catch (error) {
-    console.log(error);
-   }
+let read = require("readline-sync");
+let take = require('../../Utility/algorithimUtility');
+try {
+  //take one input of string
+  let word = read.question("enter one string");
+  let result = take.getAllPermutations(word);
+  Console.log(result);
+}
+catch (error) {
+  console.log(error);
+}
 
 

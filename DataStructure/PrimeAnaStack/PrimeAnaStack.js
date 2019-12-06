@@ -5,12 +5,12 @@
 *  File     : PrimeAnaStack.js
 *  since    : 16/11/2019
  ********************************************************************************************/
-const anagramPrimeStack = require('../PrimeAnaStack/PrimeAnaStackBL');
-const primeAna = require("readline-sync");
+let anagramPrimeStack = require('../PrimeAnaStack/PrimeAnaStackBL');
+let primeAna = require("readline-sync");
 function printAnagramPrime() {
     try {
-        const stackLink = new anagramPrimeStack.StackedLink;
-        const anagramPrime = [[]];
+        let stackLink = new anagramPrimeStack.StackedLink;
+        let anagramPrime = [[]];
         anagramPrime = primeAna.findAnaPrime(0, 1000);
         for (let i = 0; i < anagramPrime.length; i++) {
             stackLink.push(anagramPrime[i]);

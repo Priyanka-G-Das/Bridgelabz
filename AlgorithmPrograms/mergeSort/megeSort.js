@@ -5,10 +5,10 @@
 *  Auther  : priyankadas
 *  since   : 21/112019
  ***************************************************************************************************/
-const take = require("..")
-const read = require('readline-sync')
+let take = require("..")
+let read = require('readline-sync')
 try {
-    const length = read.question("Enter total number of strings");
+    let length = read.question("Enter total number of strings");
     unsortedArray = new Array(length);//declar a array
     for (let i = 0; i < length; i++)//taking the element from the array
     {
@@ -16,7 +16,7 @@ try {
     }
     console.log("before sorting string array");
     console.log(unsortedArray);
-    const sortedArray = new Array();//declar a array
+    let sortedArray = new Array();//declar a array
     sortedArray = take.mergeSort(unsortedarray, 0, unsortedArray.length - 1);
     console.log("After vsorting string array")
     console.log(sortedArray);

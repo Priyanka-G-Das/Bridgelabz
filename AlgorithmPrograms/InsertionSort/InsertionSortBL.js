@@ -1,4 +1,4 @@
-const read = require('readline-sync');
+let read = require('readline-sync');
 exports.InsertionSort = (n, a) => {
 
     var temp;

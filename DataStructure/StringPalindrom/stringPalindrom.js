@@ -3,9 +3,9 @@
 *  Auther   : priyankadas
 *  File     : StringPalindrom.js
 *  since    : 25/11/2019
- ***********************************************************************************************/
-var read = require("readline-sync")
-var take = require('../stringPalindrom/stringPalindromBL')
-var word = read.question("Enter a word to check palindrome");
+ **********************************************************************************************************/
+let read = require("readline-sync")
+let take = require('../stringPalindrom/stringPalindromBL')
+let word = read.question("Enter a word to check palindrome");
 if (word == "") throw "please enter a word"
 take.checkPalindrome(word);

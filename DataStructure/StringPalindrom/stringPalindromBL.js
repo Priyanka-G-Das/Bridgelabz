@@ -2,7 +2,7 @@ exports.checkPalindrome = (word) => {
     /**
      * create a new deque
      */
-    var deque = new Deque();
+    let deque = new Deque();
     wordArray = word.toString().split(''); //insert each character to deque
     /**
      * loop iterate each character of word
@@ -11,11 +11,11 @@ exports.checkPalindrome = (word) => {
         deque.addFront(wordArray[i]);//insert each character to deque
     }
     deque.display();
-    var flag = 1;
+    let flag = 1;
     /*the while loop to iterate to size 1*/
     while (deque.size() > 1) {
-        var front = deque.removeFront();//remove one character from front
-        var rear = deque.removeRear();//remove one character from rear
+        let front = deque.removeFront();//remove one character from front
+        let rear = deque.removeRear();//remove one character from rear
         if (front != rear) {
             flag = 0;
         }
@@ -52,7 +52,7 @@ class Deque {
             console.log("empty");
         }
         else {
-            var string = '';
+            let string = '';
             /**
              * loop iterate upto deque size
              */

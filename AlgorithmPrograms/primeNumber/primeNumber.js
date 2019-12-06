@@ -4,11 +4,11 @@
  * Author  : priyankadas
  * since   : 21/11/2019
  ************************************************************************************************/
-const intial = 0;
-const limit = 1000;
-const result = ' ';
+let intial = 0;
+let limit = 1000;
+let result = ' ';
 try {
-    const PrimeNumbers = generatePrimeNumbers(initial, limit);
+    let PrimeNumbers = generatePrimeNumbers(initial, limit);
     PrimeNumbers.forEach(function (element) {
         result = result + ' ' + element;
     });

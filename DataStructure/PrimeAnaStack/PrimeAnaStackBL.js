@@ -17,7 +17,7 @@ class StackedLink {
     */
     push(item) {
         try {
-            var temp = new Node();
+            let temp = new Node();
             temp.data = item;
             temp.next = this.top;
             this.top = temp;
@@ -33,8 +33,8 @@ class StackedLink {
                 return;
             }
             else {
-                const temp = this.top;
-                const show = "";
+                let temp = this.top;
+                let show = "";
                 while (temp != null) {
                     show = show + temp.data;
                     if (temp.next != null) {

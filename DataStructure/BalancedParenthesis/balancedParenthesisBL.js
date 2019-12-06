@@ -1,5 +1,5 @@
 BalParentheses = (exp) => {
-    const Stk = require('../balancedParenthesis/balancedParenthesis1BL');
+    let Stk = require('../balancedParenthesis/balancedParenthesis1BL');
     arr = exp.toString().split('');
     let Stack1 = new Stack();
     arr.forEach(element => {

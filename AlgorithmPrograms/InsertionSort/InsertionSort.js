@@ -5,11 +5,11 @@
 *  File     : InsertionASort.js
 *  since    : 16/11/2019 
 ********************************************************************************************************/
-const take = require('./InsertionSortBL')
-const read = require('readline-sync')
+let take = require('./InsertionSortBL')
+let read = require('readline-sync')
 try {
-    const n = read.question("enter the size");
-    const a = new Array(n);//declaring a array
+    let n = read.question("enter the size");
+    let a = new Array(n);//declaring a array
     for (let i = 1; i < n; i++) //taking the element from the array
     {
         a[i] = read.question("enter the element to the array");

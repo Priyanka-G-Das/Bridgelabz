@@ -5,7 +5,7 @@
 *  File     : BalancedParanthesis.js
 *  since    : 25/11/2019
  ***********************************************************************************************/
-const BalPar = require('./balancedParenthesisBL')
+let BalPar = require('./balancedParenthesisBL')
 let input = require('readline-sync');
 let exp = input.question("Enter the expression: ")
 let result = BalPar.BalParentheses(exp);
