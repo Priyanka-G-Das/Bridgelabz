@@ -1,11 +1,11 @@
-/********************************************************************************
+/**************************************************************************************************
  * purpose :Demonstrate mediator pattern.
  *          (Mediator pattern focuses on provide a mediator between objects for communication and 
  *          help in implementing loose-coupling between objects. )
  * file    :mediatorPattern.js
  * author  :Priyankadas
  * date    :2-12-2019
- ***************************************************************************************/
+ ***************************************************************************************************/
 /**
  * @purpose :chat workes as a mediator between two user object.
  */
