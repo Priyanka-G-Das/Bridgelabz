@@ -1,0 +1,19 @@
+{
+    "Stock": [
+        {
+            "name": "Lambargini",
+            "numberofshares": "400",
+            "price": "6000"
+        },
+        {
+            "name": "Benz",
+            "numberofshares": "250",
+            "price": "1500"
+        },
+        {
+            "name": "BMW",
+            "numberofshares": "150",
+            "price": "1300"
+        }
+    ]
+}

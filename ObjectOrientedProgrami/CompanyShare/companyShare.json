@@ -1,0 +1,27 @@
+[ 
+    { 
+       "name":"bca",
+       "shares":5,
+       "price":200
+    },
+    { 
+       "name":"HP",
+       "shares":5,
+       "price":3000
+    },
+    { 
+       "name":"Lenovo",
+       "shares":5,
+       "price":3000
+    },
+    { 
+       "name":"Mahindra",
+       "shares":5,
+       "price":250
+    },
+    { 
+       "name":"abc",
+       "shares":40,
+       "price":20
+    }
+ ]
