@@ -3,8 +3,8 @@ class Node {
         this.data = data;
         this.previous = null;
     }
- };
- class Stack {
+};
+class Stack {
     constructor() {
         this.top = null;
         this.size = 0;
@@ -12,7 +12,7 @@ class Node {
     push(data) {
         //create a new node
         const node = new Node(data);
- 
+
         node.previous = this.top;
         this.top = node;
         this.size += 1;
@@ -29,5 +29,5 @@ class Node {
     isEmpty() {
         console.log(this.size === 0);
     }
- };
- module.exports = { Stack, Node }
+};
+module.exports = { Stack, Node }

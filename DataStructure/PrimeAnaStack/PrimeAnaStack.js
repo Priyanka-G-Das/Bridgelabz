@@ -6,7 +6,7 @@
 *  since    : 16/11/2019
  ********************************************************************************************/
 const anagramPrimeStack = require('../PrimeAnaStack/PrimeAnaStackBL');
-const primeAna= require("readline-sync");
+const primeAna = require("readline-sync");
 function printAnagramPrime() {
     try {
         const stackLink = new anagramPrimeStack.StackedLink;
@@ -18,7 +18,7 @@ function printAnagramPrime() {
         console.log();
         console.log("------Anagram Stack------");
         stackLink.display();
-         top = stackLink.getHead();
+        top = stackLink.getHead();
         console.log();
         console.log("------Reversed List------");
         stackLink.displayReverse(top);

@@ -5,7 +5,7 @@
 * @overview : Binary search tree
 * @author   : Priyankadas
 * @since    :29/11/2019
-***************************************************************************/
+*******************************************************************************************************/
 let binary = require('../BinarySearchTree/BinarySearchTreeBL')
 // create an object for the BinarySearchTree
 let BST = new binary.BinarySearchTree();
@@ -22,7 +22,7 @@ BST.insert(9);
 BST.insert(27);
 
 
-let  root = BST.getRootNode();
+let root = BST.getRootNode();
 
 // prints 5 7 9 10 13 15 17 22 25 27
 BST.inorder(root);
@@ -30,7 +30,7 @@ BST.inorder(root);
 // Removing node with no children
 BST.remove(5);
 
- root = BST.getRootNode();
+root = BST.getRootNode();
 
 // prints 7 9 10 13 15 17 22 25 27
 BST.inorder(root);
@@ -38,7 +38,7 @@ BST.inorder(root);
 // Removing node with one children
 BST.remove(7);
 
-  root = BST.getRootNode();
+root = BST.getRootNode();
 
 // prints 9 10 13 15 17 22 25 27
 BST.inorder(root);
@@ -46,7 +46,7 @@ BST.inorder(root);
 // Removing node with two children
 BST.remove(15);
 
-  root = BST.getRootNode();
+root = BST.getRootNode();
 console.log("inorder traversal");
 
 // prints 9 10 13 17 22 25 27

@@ -19,8 +19,7 @@ BalParentheses = (exp) => {
     } else {
         console.log("The parentheses are Not Balanced")
     }
- }
- module.exports = {
+}
+module.exports = {
     BalParentheses
- }
- 
+}

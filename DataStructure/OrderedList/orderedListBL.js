@@ -4,7 +4,7 @@ module.exports = {
         *
         */
         let fileDataArray = fileData.toString().split(' ');
-        let  numbersArray = new Array();
+        let numbersArray = new Array();
         for (let i = 0; i < fileDataArray.length; i++) {
             numbersArray.push(fileDataArray[i]);
         }
@@ -71,19 +71,18 @@ class linkedList {
             /**
            * to store current node 
            **/
-            let  current = this.head;
+            let current = this.head;
             let previous, count = 0;
             /*
             *while loop iterate till last node if search number greater than all
              */
             while (current.next != null && count != 1) {
-                if (current.data > searchNumber) 
-                { //if current data greater than search number
+                if (current.data > searchNumber) { //if current data greater than search number
                     previous.next = node; //node reference will be added to the previous node
                     node.next = current;  //current node reference will added to the node
                     count++;
                 }
-                
+
                 else {
                     previous = current;    //previous will store current
                     current = current.next; //current will store next next node
@@ -101,7 +100,7 @@ class linkedList {
     */
     remove(searchNumber) {
         let current = this.head;
-        let  previous = null;
+        let previous = null;
         while (current != null) {
             if (current.data == searchNumber) {
                 if (previous == null) {         //if first element is the searchNumber
@@ -126,8 +125,8 @@ class linkedList {
         /**
          * print the given list after performing changes.
          */
-        let  current = this.head;
-        let  string = "";
+        let current = this.head;
+        let string = "";
         while (current) {
             string += current.data + " ";
             current = current.next;
@@ -137,7 +136,7 @@ class linkedList {
     }
     search(searchNumber) {
         let count = 0;
-        let  current = this.head;
+        let current = this.head;
         while (current != null) {
             if (current.data == searchNumber) {
                 return count; //if item found it will return 1
