@@ -24,8 +24,7 @@ exports.isAnagram = (firstLetter, secondLetter) => {
 
 
 
-/*******************************************PrimeNumber**************************************************
-*/
+/*******************************************PrimeNumber*************************************/
 
 
 exports.generatePrimeNumbers = (initial, limits) => {
@@ -54,7 +53,7 @@ exports.generatePrimeNumbers = (initial, limits) => {
 
 
 /**************************************************************************************************
- * *************************************Permutation of a String*************************************/
+*************************************Permutation of a String*************************************/
 //Recursive function to genetare all permutation  of a string
 exports.getAllPermutation = (string) => {
     const results = [];
@@ -82,7 +81,7 @@ exports.getAllPermutation = (string) => {
 
 
 /********************************************************************************************
- * ***********************************mergeSort*******************************************/
+*************************************mergeSort*******************************************/
 //Merges two subarrays of arr[]
 //first subarray is arr[1..m]
 //second subarray is arr[m+1..r]
@@ -154,8 +153,8 @@ exports.mergeSort = (unsortedarray, low, high) => {
 
 
 
-/********************************************************************
- * *******************generatePalindrom*****************************/
+/***********************************************************************************************
+ * *******************generatePalindrom******************************************************/
 //palindrom checking for the array of numbers
 exports.generatePalindrom = (primeArray) => {
     var palindromArray = [];
@@ -179,8 +178,8 @@ function reverse(n) {
     return reverseNumber;
 }
 
-/**********************************************************************
- * ************************anagramPrimeNumber*********************/
+/************************************************************************************************
+ * ************************anagramPrimeNumber***********************************************************/
 exports.AnagramPrime = (primeArray) => {
     for (let j = 0; j < primeArray.length; j++) {
         for (let k = j + 1; k < primeArray.length; k++) {
